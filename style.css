@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Playwrite+BE+WAL:wght@100..400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Anton SC", sans-serif ;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+
+}
+.body{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    padding: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav .logo img{
+    width: 60px;
+}
+nav .link  a{
+    color: white;
+    font-size: 20px;
+    margin:0px 20px;
+    transition: 0.5s;
+
+}
+nav .link  a:hover{
+    transform: translateY(-5px);
+}
+
+header{
+
+    height: 80%;
+    display: flex;
+    text-align:center;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px 5px rgba(187,90,0,0.2);
+
+
+}
+header p{
+    line-height:2.5rem;
+    font-size:15px;
+    margin: 40px 0;
+}
+header .text{
+    margin-right: 60px;
+    flex-basis: 50%;
+    text-align: left;
+    padding: 0 10%;
+}
+.btn a{
+    padding: 10px 40px;
+    background-color:transparent;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: black;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-weight: 800;
+}
+.btn a:hover{
+    background: black;
+    font-weight: 800;
+    color: rgba(187, 90, 0);
+}
+
+
+.imgs{
+    display:flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+.imgs img{
+    width:250px;
+    display: block;
+    transition: transform 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    opacity: 0.6;
+}
+.imgs img:hover{
+    transform: scale(1.15);
+    opacity: 1;
+}
